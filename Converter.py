@@ -19,3 +19,9 @@ class Converter:
     def meters_to_arshins(meters):
         arshins = meters / 0.7112  # 1 arshin = 0.7112 meters
         return arshins
+
+    @staticmethod
+    def meters_to_sajens(meters):
+        sajens = meters * 2.13  # 1 sajen = 2.13 meters
+        return sajens
+
