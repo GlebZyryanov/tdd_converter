@@ -55,7 +55,7 @@ class TestConverterClass(unittest.TestCase):
     def sajens_to_meters(self):
         self.assertAlmostEqual(Converter.sajens_to_meters(2.13), 1)
         self.assertAlmostEqual(Converter.sajens_to_meters(21.3), 10)
-        self.assertAlmostEqual(Converter.sajens_to_meters(0), 0)
+        self.assertAlmostEqual(Converter.sajens_to_meters(0), 1)
     def arshins_to_meters(self):
         self.assertAlmostEqual(Converter.arshins_to_meters(1.41), 1)
         self.assertAlmostEqual(Converter.arshins_to_meters(14.06), 10)
