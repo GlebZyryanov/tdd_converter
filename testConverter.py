@@ -10,13 +10,18 @@ class TestConverterClass(unittest.TestCase):
         self.assertTrue(hasattr(Converter, 'kilograms_to_pounds'))
 
     def test_meters_to_feet(self):
-        self.assertAlmostEqual(Converter.meters_to_feet(1), 3.28084)
-        self.assertAlmostEqual(Converter.meters_to_feet(5), 16.4042)
+        self.assertAlmostEqual(Converter.meters_to_feet(1), 3.28)
+        self.assertAlmostEqual(Converter.meters_to_feet(5), 16.40)
         self.assertAlmostEqual(Converter.meters_to_feet(0), 0)
 
+    def test_kmeters_to_miles(self):
+        self.assertAlmostEqual(Converter.kmeters_to_miles(1), 1.61)
+        self.assertAlmostEqual(Converter.kmeters_to_miles(10), 16.09)
+        self.assertAlmostEqual(Converter.kmeters_to_miles(0), 0)
+
     def test_kilograms_to_pounds(self):
-        self.assertAlmostEqual(Converter.kilograms_to_pounds(1), 2.20462)
-        self.assertAlmostEqual(Converter.kilograms_to_pounds(10), 22.0462)
+        self.assertAlmostEqual(Converter.kilograms_to_pounds(1), 2.20)
+        self.assertAlmostEqual(Converter.kilograms_to_pounds(10), 22.05)
         self.assertAlmostEqual(Converter.kilograms_to_pounds(0), 0)
 
     def test_celsius_to_reaumur(self):
@@ -25,8 +30,8 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.celsius_to_reaumur(0), 0)
 
     def test_meters_to_arshins(self):
-        self.assertAlmostEqual(Converter.meters_to_arshins(1), 1.4060742407199098)
-        self.assertAlmostEqual(Converter.meters_to_arshins(10), 14.060742407199099)
+        self.assertAlmostEqual(Converter.meters_to_arshins(1), 1.41)
+        self.assertAlmostEqual(Converter.meters_to_arshins(10), 14.06)
         self.assertAlmostEqual(Converter.meters_to_arshins(0), 0)
     def test_meters_to_sajens(self):
         self.assertAlmostEqual(Converter.meters_to_sajens(1), 2.13)
