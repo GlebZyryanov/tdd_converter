@@ -8,9 +8,9 @@ class Converter:
 
     @staticmethod
     def kmeters_to_miles(kmeters):
-        feet = kmeters * 1.60934
-        feet = round(feet, 2)
-        return feet
+        miles = kmeters * 0.621371
+        miles = round(miles, 2)
+        return miles
 
     @staticmethod
     def celcius_to_fahrenheit(celcius):
@@ -42,3 +42,8 @@ class Converter:
         sajens = round(sajens, 2)
         return sajens
 
+    @staticmethod
+    def feet_to_meters(feet):
+        meters = feet / 3.28084
+        meters = round(meters, 2)
+        return meters
