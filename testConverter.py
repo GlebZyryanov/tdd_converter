@@ -67,6 +67,11 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.feet_to_arshins(10), 23.3)
         self.assertAlmostEqual(Converter.feet_to_arshins(0), 0)
 
+    def arshins_to_feet(self):
+        self.assertAlmostEqual(Converter.arshins_to_feet(2.33), 10)
+        self.assertAlmostEqual(Converter.arshins_to_feet(23.3), 10)
+        self.assertAlmostEqual(Converter.arshins_to_feet(0), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
