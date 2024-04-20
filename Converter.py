@@ -71,3 +71,9 @@ class Converter:
         arshins = feet * 2.33
         arshins = round(arshins, 2)
         return arshins
+
+    @staticmethod
+    def arshins_to_feet(arshins):
+        feet = arshins * 0.428
+        feet = round(feet, 2)
+        return feet
