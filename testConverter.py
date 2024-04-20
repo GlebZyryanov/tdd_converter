@@ -19,5 +19,10 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.kilograms_to_pounds(10), 22.0462)
         self.assertAlmostEqual(Converter.kilograms_to_pounds(0), 0)
 
+    def test_celsius_to_reaumur(self):
+        self.assertAlmostEqual(Converter.celsius_to_reaumur(1), 0.8)
+        self.assertAlmostEqual(Converter.celsius_to_reaumur(10), 8.0)
+        self.assertAlmostEqual(Converter.celsius_to_reaumur(0), 0)
+
 if __name__ == '__main__':
     unittest.main()
