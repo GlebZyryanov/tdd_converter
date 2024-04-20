@@ -59,3 +59,9 @@ class Converter:
         meters = arshins * 0.7112
         meters = round(meters, 2)
         return meters
+
+    @staticmethod
+    def sajens_to_meters(sajens):
+        meters = sajens / 2.13
+        meters = round(meters, 2)
+        return meters
