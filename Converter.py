@@ -14,3 +14,8 @@ class Converter:
     def celsius_to_reaumur(celsius):
         reaumur = celsius * 0.8
         return reaumur
+
+    @staticmethod
+    def meters_to_arshins(meters):
+        arshins = meters / 0.7112  # 1 arshin = 0.7112 meters
+        return arshins
