@@ -26,7 +26,7 @@ class TestConverterClass(unittest.TestCase):
     def test_miles_to_kmeters(self):
         self.assertAlmostEqual(Converter.miles_to_kmeters(1), 1.61)
         self.assertAlmostEqual(Converter.miles_to_kmeters(10), 16.09)
-        self.assertAlmostEqual(Converter.miles_to_kmeters(0), 1)
+        self.assertAlmostEqual(Converter.miles_to_kmeters(0), 0)
 
     def test_kilograms_to_pounds(self):
         self.assertAlmostEqual(Converter.kilograms_to_pounds(1), 2.20)
@@ -51,5 +51,11 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.meters_to_sajens(1), 2.13)
         self.assertAlmostEqual(Converter.meters_to_sajens(10), 21.3)
         self.assertAlmostEqual(Converter.meters_to_sajens(0), 0)
+
+
+def arshins_to_meters(self):
+    self.assertAlmostEqual(Converter.arshins_to_meters(1.41), 1)
+    self.assertAlmostEqual(Converter.arshins_to_meters(14.06), 10)
+    self.assertAlmostEqual(Converter.arshins_to_meters(0), 0)
 if __name__ == '__main__':
     unittest.main()
