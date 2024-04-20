@@ -25,9 +25,12 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.celsius_to_reaumur(0), 0)
 
     def test_meters_to_arshins(self):
-        self.assertAlmostEqual(Converter.meters_to_arshins(1), 0.7112)
-        self.assertAlmostEqual(Converter.meters_to_arshins(10), 7.112)
+        self.assertAlmostEqual(Converter.meters_to_arshins(1), 1.4060742407199098)
+        self.assertAlmostEqual(Converter.meters_to_arshins(10), 14.060742407199099)
         self.assertAlmostEqual(Converter.meters_to_arshins(0), 0)
-
+    def test_meters_to_sajens(self):
+        self.assertAlmostEqual(Converter.meters_to_sajens(1), 2.13)
+        self.assertAlmostEqual(Converter.meters_to_sajens(10), 21.3)
+        self.assertAlmostEqual(Converter.meters_to_sajens(0), 0)
 if __name__ == '__main__':
     unittest.main()
