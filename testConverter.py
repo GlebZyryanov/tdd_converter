@@ -19,9 +19,14 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.feet_to_meters(10), 3.05)
         self.assertAlmostEqual(Converter.feet_to_meters(0), 0)
     def test_kmeters_to_miles(self):
-        self.assertAlmostEqual(Converter.kmeters_to_miles(1), 1.61)
-        self.assertAlmostEqual(Converter.kmeters_to_miles(10), 16.09)
+        self.assertAlmostEqual(Converter.kmeters_to_miles(1), 0.62)
+        self.assertAlmostEqual(Converter.kmeters_to_miles(10), 6.21)
         self.assertAlmostEqual(Converter.kmeters_to_miles(0), 0)
+
+    def test_miles_to_kmeters(self):
+        self.assertAlmostEqual(Converter.miles_to_kmeters(1), 1.61)
+        self.assertAlmostEqual(Converter.miles_to_kmeters(10), 16.09)
+        self.assertAlmostEqual(Converter.miles_to_kmeters(0), 0)
 
     def test_kilograms_to_pounds(self):
         self.assertAlmostEqual(Converter.kilograms_to_pounds(1), 2.20)
