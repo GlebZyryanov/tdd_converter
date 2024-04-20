@@ -25,6 +25,12 @@ class Converter:
         return pounds
 
     @staticmethod
+    def pounds_to_kilograms(pounds):
+        kilograms = pounds / 2.20462
+        kilograms = round(kilograms, 2)
+        return kilograms
+
+    @staticmethod
     def celsius_to_reaumur(celsius):
         reaumur = celsius * 0.8
         reaumur = round(reaumur, 2)
