@@ -74,8 +74,14 @@ class TestConverterClass(unittest.TestCase):
 
     def test_sajens_to_miles(self):
         self.assertAlmostEqual(Converter.sajens_to_miles(754.29), 1)
-        self.assertAlmostEqual(Converter.sajens_to_miles(7542.86), 10)
+        self.assertAlmostEqual(Converter.sajens_to_miles(7542.86), 9.9999)
+        self.assertAlmostEqual(Converter.sajens_to_miles(1), 0.0013)
+        self.assertAlmostEqual(Converter.sajens_to_miles(10), 0.0133)
         self.assertAlmostEqual(Converter.sajens_to_miles(0), 0)
 
+    def test_miles_to_sajens(self):
+        self.assertAlmostEqual(Converter.miles_to_sajens(1), 754.29)
+        self.assertAlmostEqual(Converter.miles_to_sajens(10), 7542.9)
+        self.assertAlmostEqual(Converter.miles_to_sajens(0), 0)
 if __name__ == '__main__':
     unittest.main()
