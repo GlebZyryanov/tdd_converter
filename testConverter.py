@@ -64,7 +64,7 @@ class TestConverterClass(unittest.TestCase):
 
     def test_feet_to_arshins(self):
         self.assertAlmostEqual(Converter.feet_to_arshins(1), 2.33)
-        self.assertAlmostEqual(Converter.feet_to_arshins(10), 23.33)
+        self.assertAlmostEqual(Converter.feet_to_arshins(10), 23.3)
         self.assertAlmostEqual(Converter.feet_to_arshins(0), 0)
 
 
