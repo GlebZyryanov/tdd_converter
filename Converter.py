@@ -47,3 +47,9 @@ class Converter:
         meters = feet / 3.28084
         meters = round(meters, 2)
         return meters
+
+    @staticmethod
+    def miles_to_kmeters(miles):
+        kmeters = miles * 1.60934
+        kmeters = round(kmeters, 2)
+        return kmeters
