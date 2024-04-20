@@ -13,6 +13,12 @@ class Converter:
         return feet
 
     @staticmethod
+    def celcius_to_fahrenheit(celcius):
+        f = celcius * 1.80000 + 32.00
+        f = round(f, 2)
+        return f
+
+    @staticmethod
     def kilograms_to_pounds(kilograms):
         pounds = kilograms * 2.20462
         pounds = round(pounds, 2)
