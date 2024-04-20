@@ -33,6 +33,10 @@ class TestConverterClass(unittest.TestCase):
         self.assertAlmostEqual(Converter.kilograms_to_pounds(10), 22.05)
         self.assertAlmostEqual(Converter.kilograms_to_pounds(0), 0)
 
+    def test_pounds_to_kilograms(self):
+        self.assertAlmostEqual(Converter.pounds_to_kilograms(2.20), 1)
+        self.assertAlmostEqual(Converter.pounds_to_kilograms(22.05), 10)
+        self.assertAlmostEqual(Converter.pounds_to_kilograms(0), 0)
     def test_celsius_to_reaumur(self):
         self.assertAlmostEqual(Converter.celsius_to_reaumur(1), 0.8)
         self.assertAlmostEqual(Converter.celsius_to_reaumur(10), 8.0)
