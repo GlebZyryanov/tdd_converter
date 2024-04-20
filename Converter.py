@@ -53,3 +53,9 @@ class Converter:
         kmeters = miles * 1.60934
         kmeters = round(kmeters, 2)
         return kmeters
+
+    @staticmethod
+    def arshins_to_meters(arshins):
+        meters = arshins * 0.7112
+        meters = round(meters, 2)
+        return meters
