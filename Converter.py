@@ -10,3 +10,7 @@ class Converter:
         pounds = kilograms * 2.20462
         return pounds
 
+    @staticmethod
+    def celsius_to_reaumur(celsius):
+        reaumur = celsius * 0.8
+        return reaumur
