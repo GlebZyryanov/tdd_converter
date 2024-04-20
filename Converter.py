@@ -81,5 +81,11 @@ class Converter:
     @staticmethod
     def sajens_to_miles(sajens):
         miles = sajens / 754.29
-        miles = round(miles, 2)
+        miles = round(miles, 4)
         return miles
+
+    @staticmethod
+    def miles_to_sajens(miles):
+        sajens = miles * 754.29
+        sajens = round(sajens, 2)
+        return sajens
