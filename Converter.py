@@ -77,3 +77,9 @@ class Converter:
         feet = arshins * 0.428
         feet = round(feet, 2)
         return feet
+
+    @staticmethod
+    def sajens_to_miles(sajens):
+        miles = sajens / 754.29
+        miles = round(miles, 2)
+        return miles
